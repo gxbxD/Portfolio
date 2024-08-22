@@ -47,7 +47,7 @@ const allProjects = [
 },
 ];
 
-// foda
+
 
 function ProjectList() {
   const [filter, setFilter] = useState('all');
