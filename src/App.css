@@ -1,38 +1,70 @@
+*, *::before, *::after {
+  box-sizing: inherit; /* Aplica o box-sizing a todos os elementos */
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  color: #dfdfe2;
+  background-color: #212121;
+  backdrop-filter: blur(10px); /* Aplica um desfoque ao fundo */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  flex-grow: 1; /* Faz com que esta div cresça para ocupar o espaço disponível */
+  overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo for maior que a div */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+footer {
+  width: 100%;
+  height: 20%;
+  max-height: 20%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  color: purple;
+}
+
+footer .footerContatos {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin: 10px 0;
+  width: 100%;
 }

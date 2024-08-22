@@ -1,0 +1,25 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: purple;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #9966CC;
+  }
+  
+  .active {
+    background-color: #9966CC;
+    box-shadow: 2px 2px 5px purple;
+  }

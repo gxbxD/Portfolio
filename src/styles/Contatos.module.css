@@ -1,0 +1,48 @@
+.kntkticos {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0.5rem;
+}
+
+.kntkticos > ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+    list-style: none;
+    width: 100%;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+
+.kntkticos > ul > li {
+    color: purple;
+    margin: 0;
+    padding: 0.2rem 1rem;
+    display: block;
+    flex: 1;
+    text-align: center;
+}
+
+.mailico,
+.linkedinico,
+.githubico {
+  width: 2rem; /* Define um tamanho máximo para os ícones */
+  height: 2rem; /* Define um tamanho máximo para os ícones */
+  fill: currentColor; /* Herda a cor do texto pai */
+  transition: transform 0.3s ease;
+}
+
+.mailico:hover,
+.linkedinico:hover,
+.githubico:hover {
+    transform: scale(1.1);
+}

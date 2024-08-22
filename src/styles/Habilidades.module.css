@@ -1,0 +1,50 @@
+.Habilidadessec {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.Habilidades {
+    background-color: rgba(46, 45, 45, 0.8);
+    border-radius: 20px;
+    box-shadow: 4px 4px 15px purple;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    width: 60%;
+    min-height: 60%;
+    margin: 0;
+    padding: 1rem;
+    --icons-per-row: 5;
+}
+
+.Habilidades > svg {
+    object-fit: cover;
+    padding: 0.5rem;
+    margin: 0;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* Adicionando efeito de transição */
+    width: calc(100% / var(--icons-per-row) - 1rem);
+    max-width: 140px;
+}
+
+.Habilidades > svg:hover {
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+
+@media (max-width: 720px) {
+    .Habilidades {
+        width: 92%;
+        --icons-per-row: 4;
+    }
+
+}
